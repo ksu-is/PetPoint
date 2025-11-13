@@ -19,4 +19,4 @@ PetPoint is a Python program designed to help pet groomers manage their appointm
 Small grooming businesses, salon owners, and mobile pet groomers who want an organized way to track daily appointments.
 
 ## Inspiration:
-https://github.com/slabiak/AppointmentScheduler
+https://github.com/ksu-is/PetScheduler.git
