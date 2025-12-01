@@ -1,8 +1,16 @@
 appointments = []
 
-
 print("Welcome to PetPoint!")
 print("Pet Grooming Appointment System")
+
+
+def show_menu():
+    print("\n===== PetPoint Menu =====")
+    print("1. Add new appointment")
+    print("2. View appointments")
+    print("3. Search appointments")
+    print("4. Exit")
+
 
 def add_appointment():
     print("\n--- Add New Appointment ---")
@@ -24,12 +32,18 @@ def add_appointment():
     print("\nAppointment added successfully!")
     print(f"- {pet_name} ({owner_name}) on {date} at {time} for {service}")
 
-def show_menu():
-    print("\n===== PetPoint Menu =====")
-    print("1. Add new appointment")
-    print("2. View appointments")
-    print("3. Search appointments")
-    print("4. Exit")
+
+def view_appointments():
+    print("\n--- All Appointments ---")
+
+    if not appointments:
+        print("No appointments scheduled yet.")
+        return
+
+    for index, appt in enumerate(appointments, start=1):
+        print(f"{index}. {appt['pet_name']} ({appt['owner_name']}) - "
+              f"{appt['date']} at {appt['time']} for {appt['service']}")
+
 
 def main():
     while True:
@@ -38,9 +52,8 @@ def main():
 
         if choice == "1":
             add_appointment()
-
         elif choice == "2":
-            print("Viewing appointments...")
+            view_appointments()
         elif choice == "3":
             print("Searching appointments...")
         elif choice == "4":
@@ -49,4 +62,6 @@ def main():
         else:
             print("Invalid choice, please try again.")
 
+
 main()
+
