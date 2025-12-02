@@ -41,8 +41,37 @@ def view_appointments():
         return
 
     for index, appt in enumerate(appointments, start=1):
-        print(f"{index}. {appt['pet_name']} ({appt['owner_name']}) - "
-              f"{appt['date']} at {appt['time']} for {appt['service']}")
+        print(
+            f"{index}. {appt['pet_name']} ({appt['owner_name']}) - "
+            f"{appt['date']} at {appt['time']} for {appt['service']}"
+        )
+
+
+def search_appointments():
+    print("\n--- Search Appointments ---")
+
+    if not appointments:
+        print("No appointments to search yet.")
+        return
+
+    term = input("Enter pet name or owner name to search: ").strip().lower()
+
+    matches = []
+    for appt in appointments:
+        pet = appt["pet_name"].lower()
+        owner = appt["owner_name"].lower()
+        if term in pet or term in owner:
+            matches.append(appt)
+
+    if not matches:
+        print(f"No appointments found matching '{term}'.")
+    else:
+        print(f"\nResults for '{term}':")
+        for index, appt in enumerate(matches, start=1):
+            print(
+                f"{index}. {appt['pet_name']} ({appt['owner_name']}) - "
+                f"{appt['date']} at {appt['time']} for {appt['service']}"
+            )
 
 
 def main():
@@ -55,7 +84,7 @@ def main():
         elif choice == "2":
             view_appointments()
         elif choice == "3":
-            print("Searching appointments...")
+            search_appointments()
         elif choice == "4":
             print("Goodbye!")
             break
@@ -64,4 +93,3 @@ def main():
 
 
 main()
-
