@@ -9,9 +9,8 @@ It helps pet groomers manage their daily appointments by allowing them to add, v
 ## 🔍 Research  
 - [x] Explore existing Python scheduling and management systems  
 - [x] Review:[PetScheduler (GitHub)](https://github.com/ksu-is/PetScheduler)  
-- [ ] Study Python CSV and SQLite libraries for saving data  
-- [ ] Research how to use Jupyter Notebooks for testing project logic  
-- [ ] Look into using `datetime` and `tkinter` for scheduling and GUI features  
+- [x] Study Python CSV and SQLite libraries for saving data  
+- [x] Look into using `datetime` and `tkinter` for scheduling and GUI features  
 
 ---
 
@@ -19,10 +18,10 @@ It helps pet groomers manage their daily appointments by allowing them to add, v
 - [x] Create function to add new grooming appointments  
 - [x] Create function to view all appointments  
 - [x] Add search feature (by pet name or owner name)  
-- [ ] Store appointment data using CSV or SQLite  
-- [ ] Include details: pet’s name, owner info, service type, date/time  
-- [ ] Build a simple command-line or Tkinter-based interface  
-- [ ] Make it easy to run in **Python (.py)** or **Jupyter Notebook (.ipynb)**  
+- [x] Store appointment data in a text file so it persists between runs  
+- [ ] (Future) Upgrade storage to CSV format or SQLite database
+- [x] Include details: pet’s name, owner info, service type, date/time    
+- [x] Make it easy to run in **Python (.py)** or **Jupyter Notebook (.ipynb)**  
 
 ---
 
@@ -56,7 +55,6 @@ It helps pet groomers manage their daily appointments by allowing them to add, v
 
 ### **Sprint 2 Tasks Still in Progress**
 - [x] Add search functionality (`search_appointments()`)  
-- [ ] Begin planning simple data saving (to file) for Sprint 3  
 
 ---
 ## ✔️ Sprint 3 – Completed
@@ -69,12 +67,10 @@ It helps pet groomers manage their daily appointments by allowing them to add, v
 - [x] Uploaded the Sprint 3 PPT slide to the GitHub repository  
 - [x] Ensured the slide is included for professor review in both GitHub and D2L 
 ### **Planned Tasks**
-- [ ] Implement appointment search function  
-- [ ] Add file saving/loading for appointments (CSV or text file)  
-- [ ] Refactor functions into modules if time allows  
-- [ ] Update README with new sprint details  
+- [x] Implement appointment search function  
+- [x] Update README with new sprint details  
 - [x] Create Sprint 3 PPT Splash Screen slide  
-- [ ] Record project presentation in Microsoft Teams  
+- [x] Record project presentation in Microsoft Teams  
 - [x] Ensure PPT slide is uploaded to GitHub and D2L  
 
 ---
